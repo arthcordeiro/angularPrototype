@@ -1,0 +1,129 @@
+@media only screen and (min-width: 700px){
+    .box{
+      position: relative;
+      left: 30%;
+    }
+    .container-1{
+      width: 100%;
+      vertical-align: middle;
+      white-space: nowrap;
+      position: relative;
+    }
+    .container-1 input#search{
+      width: 200%;
+      height: 3em;
+      background: #42bff5;
+      border: none;
+      float: left;
+      color: white;
+      padding-left: 20%;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      font-size: .8em;
+    }
+    .container-1 input#search::-webkit-input-placeholder {
+      color: white;
+    }
+
+    .container-1 input#search:-moz-placeholder { /* Firefox 18- */
+      color: white;  
+    }
+
+    .container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+      color: white;  
+    }
+
+    .container-1 input#search:-ms-input-placeholder {  
+      color: white;  
+    }
+
+    .container-1 .icon{
+      position: absolute;
+      top: 50%;
+      margin-left: 5%;
+      margin-top: 4%;
+      z-index: 1;
+      color: white;
+      cursor: pointer;
+    }
+    
+    .text-cursos{
+      position: relative;
+      top:8%;
+      left:1em;
+    }
+}
+
+@media only screen and (max-width: 700px){
+
+  .box{
+    position: relative;
+    left: 30%;
+  }
+  .container-1{
+    width: 100%;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+  }
+  .container-1 input#search{
+    width: 200%;
+    height: 3em;
+    background: #42bff5;
+    border: none;
+    float: left;
+    color: white;
+    padding-left: 20%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display:none;
+    font-size: .8em;
+  }
+  .container-1 input#search::-webkit-input-placeholder {
+    color: white;
+  }
+  
+  .container-1 input#search:-moz-placeholder { /* Firefox 18- */
+    color: white;  
+  }
+  
+  .container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+    color: white;  
+  }
+  
+  .container-1 input#search:-ms-input-placeholder {  
+    color: white;  
+  }
+  
+  .container-1 .icon{
+    position: relative;
+    right: -1500%;
+    color: white;
+    cursor: pointer;
+  }
+
+  .text-cursos{
+    position: relative;
+    top:8%;
+    left:1em;
+  }
+  
+}
+@media only screen and (max-width: 600px){
+  .container-1 .icon{
+    position: relative;
+    right: -1000%;
+    color: white;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 500px){
+  .container-1 .icon{
+    position: relative;
+    right: -1000%;
+    color: white;
+    cursor: pointer;
+  }
+}

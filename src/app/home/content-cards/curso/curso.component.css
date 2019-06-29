@@ -1,0 +1,22 @@
+.card-model {
+    width: 18em;
+    height: 12em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .card-header{
+      height: 8em;
+      padding-left: 1.5%;
+  }
+  .size-font{
+      font-size: 1em;
+  }
+  .footer-card span{
+    padding-left: 5%;
+    padding-top: 7%;
+    color: rgb(136, 132, 132);
+  }
+  .footer-card i{
+      position: absolute;
+      right: 5%;
+  }

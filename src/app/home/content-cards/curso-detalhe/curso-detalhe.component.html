@@ -1,0 +1,48 @@
+<mat-toolbar color="primary">
+    <div class="text-cursos">
+        <p>
+            <a routerLink="" style="text-decoration: none; color:white;"><i class="material-icons position-icon">
+                    keyboard_backspace
+                </i>
+            </a>
+        </p>
+    </div>
+</mat-toolbar>
+
+<mat-card class="card-model">
+    <mat-card-title>{{curso.title}}</mat-card-title><br>
+    <mat-card-subtitle>
+        <p>
+            {{curso.description}}
+        </p><br>
+        <div class="row espaco">
+            <div class="col-md-1"><i class="material-icons">event</i></div>
+            <div class="col-md-11"><span>{{curso.start | date: 'dd/MM/yyyy'}}</span></div>
+        </div>
+       <div class="row espaco">
+           <div class="col-md-1"><i class="material-icons">query_builder</i></div>
+           <div class="col-md-11"><span>De {{curso.start | date: 'hh:mm'}} às {{curso.finish | date: 'hh:mm'}}</span></div>
+       </div>
+       <div class="row espaco">
+            <div class="col-md-1"><i class="material-icons">room</i></div>
+            <div class="col-md-11"><span>{{curso.address.street}}, {{curso.address.number}} - {{curso.address.city}}</span></div>
+        </div>
+        <div class="row espaco">
+            <div class="col-md-1"><i class="material-icons">attach_money</i></div>
+            <div class="col-md-11"><span>{{curso.price}}</span></div>
+        </div>
+        <div class="row espaco">
+            <div class="col-md-1"><i class="material-icons">label</i></div>
+            <div class="col-md-11"><span>{{curso.category}}</span></div>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                <div mat-card-avatar class="card-avatar">
+                    <img class="avatar" src={{curso.consultant.avatar}} alt="avatar">
+                </div>
+            </div>
+            <div class="col-md-11"><span>{{curso.consultant.name}}</span></div>
+        </div>
+    </mat-card-subtitle>
+    <mat-card-footer><button class="btn-inscrever">INSCRIÇÃO</button></mat-card-footer>
+</mat-card>

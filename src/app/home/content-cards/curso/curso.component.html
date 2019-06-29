@@ -1,0 +1,19 @@
+<a [routerLink]="['curso',curso.id]" style="text-decoration: none;">
+    <div class="col-md-4 col-lg-4" style="padding: 1em;">
+        <mat-card class="card-model" color="primary">
+            <mat-card-header class="card-header">
+                <mat-card-subtitle>{{curso.category}}</mat-card-subtitle>
+                <mat-card-title class="size-font">{{curso.title}}</mat-card-title>
+                <mat-card-subtitle>{{curso.address.city}}</mat-card-subtitle>
+            </mat-card-header>
+
+            <mat-card-content class="footer-card">
+                <hr />
+                <span>{{curso.start | date: 'dd/MM/yyyy'}}</span>
+                <i class="material-icons">
+                    event
+                </i>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</a>

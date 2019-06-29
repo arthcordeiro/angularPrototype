@@ -1,0 +1,1 @@
+export const URL_API = 'https://gitlab.com/fabricio.henriques/test-frontend/raw/master/api/courses.json'
